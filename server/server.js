@@ -77,7 +77,7 @@ app.delete('/todos/:id', authenticate, (req, res) => {
         res.send({todo});
     }).catch((e) => {
         res.status(400).send();
-    })
+    });
 });
 
 app.patch('/todos/:id', authenticate, (req, res) => {
